@@ -1,3 +1,15 @@
+<p>This app was developed using Laravel 9 and Vue 3. Please follow the instructions below for running the application locally</p>
+<ol>
+    <li>`$ git clone git@github.com:wittdobesh/MovieSearch.git` OR download and extract the ZIP</li>
+    <li>`$ composer install`</li>
+    <li>`$ npm install`</li>
+    <li>Configure your .env file (renaming .env.example and setting your APP_URL appropriately)</li>
+    <li>`$ npm run dev` in one terminal to run frontend Node server</li>
+    <li>`$ php artisan serve` in another terminal to run Laravel backend</li>
+    <li>Open browser to APP_URL</li>
+</ol>
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">

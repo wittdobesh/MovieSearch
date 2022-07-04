@@ -30,7 +30,7 @@ class MovieDBTest extends TestCase
      */
     public function test_the_application_can_get_response()
     {
-        $response = $this->get('/api/movies');
+        $response = $this->get('/');
 
         $response->assertStatus(200);
     }

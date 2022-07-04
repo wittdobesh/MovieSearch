@@ -8,8 +8,6 @@ use App\Models\Actor;
 
 class Movie extends Model
 {
-    use HasFactory;
-
     protected $fillable = ['title', 'overview', 'release_date', 'runtime', 'cast'];
 
 }
