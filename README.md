@@ -3,7 +3,7 @@
     <li>`$ git clone git@github.com:wittdobesh/MovieSearch.git` OR download and extract the ZIP</li>
     <li>`$ composer install`</li>
     <li>`$ npm install`</li>
-    <li>Configure your .env file (renaming .env.example and setting your APP_URL appropriately)</li>
+    <li>Configure your .env file (renaming .env.example, setting your APP_URL appropriately, and adding your MovieDB API Key to MOVIEDB_API_KEY)</li>
     <li>`$ npm run dev` in one terminal to run frontend Node server</li>
     <li>`$ php artisan serve` in another terminal to run Laravel backend</li>
     <li>Open browser to APP_URL</li>
