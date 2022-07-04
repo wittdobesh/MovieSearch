@@ -1,18 +1,22 @@
 <template>
-    <div id="searchForm" class="search">
-        <form onsubmit="return false">
-            <label>Enter the title of the movie you want to find </label>
-            <input type="text" v-model="search"/>
-            <button @click="searchMovie()">Search</button>
+    <div id="searchForm" class="container text-center mt-5 mb-5">
+        <form class="form-horizontal" onsubmit="return false">
+            <div class="form-group">
+                <label class="form-label">Enter the title of the movie you want to find: </label>
+                <input class="form-control-sm" type="text" v-model="search"/>
+            </div>
+            <div class="form-group">            
+                <button @click="searchMovie()" class="btn btn-primary">Search</button>
+            </div>
         </form>
     </div>
     
     <p v-if="errors.length">
-    <b>Please correct the following error(s):</b>
-    <ul>
-      <li v-for="error in errors">{{ error }}</li>
-    </ul>
-  </p>
+        <b>Please correct the following error(s):</b>
+        <ul class="list-group">
+        <li class="list-group-item" v-for="error in errors">{{ error }}</li>
+        </ul>
+    </p>
     <show-movie 
         v-if="errors.length == 0 && movie.title!=''"
         :movie="movie"/>
